@@ -5,22 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>BAC MAURITANIE 🇲🇷 | الأرشيف الكامل 2010 - 2025</title>
-    <meta name="description" content="الأرشيف الأقوى والأجمل للامتحانات الوطنية الموريتانية (الباكالوريا) للشعب العلمية C & D من سنة 2010 إلى 2025. مواد، سنوات، وعد تنازلي لباك 2026.">
-    <meta name="keywords" content="باك موريتانيا, باكالوريا موريتانيا, امتحانات موريتانيا, شعبة C, شعبة D, أرشيف الباك, BAC Mauritanie">
-    <meta name="author" content="SD THE BEST">
+    <meta name="description" content="الأرشيف الأقوى والأجمل للامتحانات الوطنية الموريتانية (الباكالوريا) للشعب العلمية C & D من سنة 2010 إلى 2025.">
     
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://codepen.io/your-work"> <meta property="og:title" content="BAC MAURITANIE 🇲🇷 | الأرشيف الكامل">
-    <meta property="og:description" content="الأرشيف الأقوى والأجمل للامتحانات الوطنية الموريتانية (2010-2025).">
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Mauritania.svg/1200px-Flag_of_Mauritania.svg.png">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="BAC MAURITANIE 🇲🇷 | الأرشيف الكامل">
-    <meta property="twitter:description" content="الأرشيف الأقوى والأجمل للامتحانات الوطنية الموريتانية (2010-2025).">
-    <meta property="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Mauritania.svg/1200px-Flag_of_Mauritania.svg.png">
-
-    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Mauritania.svg/32px-Flag_of_Mauritania.svg.png">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@900&display=swap" rel="stylesheet">
@@ -30,7 +16,6 @@
         :root { --primary: #0ea5e9; --bg: #020617; }
         body { font-family: 'Cairo', sans-serif; background: var(--bg); color: white; margin: 0; overflow-x: hidden; scroll-behavior: smooth; }
         .glow-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%); z-index: -1; }
-        #user-avatar { width: 42px; height: 42px; background: linear-gradient(135deg, #0ea5e9, #6366f1); display: none; align-items: center; justify-content: center; border-radius: 50%; font-family: 'Montserrat'; font-weight: 900; box-shadow: 0 0 20px rgba(14, 165, 233, 0.3); border: 2px solid rgba(255,255,255,0.2); font-size: 1.2rem; text-transform: uppercase; }
         .page { display: none; padding: 120px 5% 50px; min-height: 100vh; width: 100%; }
         .active { display: block !important; }
         .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: clamp(20px, 4vw, 40px); transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
@@ -38,14 +23,12 @@
         .year-btn { background: rgba(30, 41, 59, 0.6); padding: 18px; border-radius: 16px; font-weight: 900; font-family: 'Montserrat'; transition: 0.3s; border: 1px solid rgba(255,255,255,0.05); }
         .year-btn:hover { background: var(--primary); transform: translateY(-5px); }
 
-        /* الأنيميشن الاحترافي للألوان */
         @keyframes flowGradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
-        /* استهداف "BAC MAURITANIE" و "2010-2025" مباشرة */
         .text-sky-500.cursor-pointer, 
         h1.branch-text {
             background: linear-gradient(90deg, #0ea5e9, #6366f1, #a855f7, #34d399, #0ea5e9);
@@ -56,8 +39,6 @@
             animation: flowGradient 4s linear infinite !important;
         }
 
-        @keyframes colorShift { 0%, 100% { color: #10b981; text-shadow: 0 0 10px rgba(16, 185, 129, 0.5); } 50% { color: #ffffff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); } }
-        .sd-footer { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.2rem; letter-spacing: 2px; animation: colorShift 3s infinite ease-in-out; opacity: 0.8; }
         .countdown-container { direction: ltr; }
     </style>
 </head>
@@ -70,10 +51,6 @@
             <div class="text-2xl md:text-3xl font-black tracking-tighter cursor-pointer" onclick="showPage('home')">
                 <span class="text-sky-500">BAC</span> MAURITANIE 🇲🇷
             </div>
-            <div class="flex items-center gap-4">
-                <div id="user-avatar"></div>
-                <button id="login-btn" onclick="showPage('auth')" class="bg-sky-500 hover:bg-sky-400 px-6 py-2.5 rounded-full text-xs font-black transition-all">تفعيل الأرشيف</button>
-            </div>
         </div>
     </nav>
 
@@ -81,7 +58,7 @@
         <div class="max-w-6xl mx-auto">
             <h1 class="branch-text mb-16 bg-clip-text text-transparent bg-gradient-to-b from-white to-slate-500">2010 - 2025</h1>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 mb-10">
                 <div onclick="openBranch('C')" class="glass-card p-16 group cursor-pointer border-b-4 border-b-sky-500 hover:bg-sky-500/5 transition-all">
                     <h2 class="branch-text text-sky-500 group-hover:tracking-widest transition-all">شعبة C</h2>
                 </div>
@@ -90,7 +67,25 @@
                 </div>
             </div>
 
-            <div class="max-w-4xl mx-auto mt-20 px-4 mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 mb-20 max-w-4xl mx-auto">
+                <div onclick="showPage('calc-page'); renderInputs();" class="glass-card p-8 group cursor-pointer border-r-4 border-r-emerald-500 hover:bg-emerald-500/10 transition-all flex items-center gap-6">
+                    <div class="text-5xl">📊</div>
+                    <div class="text-right">
+                        <h3 class="text-2xl font-black text-emerald-400 mb-1">حاسبة المعدل</h3>
+                        <p class="text-slate-400 text-sm">احسب معدلك بدقة حسب ضوارب شعبتك</p>
+                    </div>
+                </div>
+
+                <div onclick="showPage('contact-page')" class="glass-card p-8 group cursor-pointer border-r-4 border-r-pink-500 hover:bg-pink-500/10 transition-all flex items-center gap-6">
+                    <div class="text-5xl">💬</div>
+                    <div class="text-right">
+                        <h3 class="text-2xl font-black text-pink-400 mb-1">رسالة لصانع الموقع</h3>
+                        <p class="text-slate-400 text-sm">شاركنا آراءك ومقترحاتك لتطوير المنصة</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 mb-20">
                 <div class="glass-card p-10 border-t-4 border-t-emerald-500">
                     <h3 class="text-2xl font-black mb-8 text-emerald-400 italic">⏳ المتبقي على حلم باك 2026</h3>
                     <div id="countdown" class="grid grid-cols-4 gap-4 mb-10 font-bold countdown-container">
@@ -118,10 +113,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="mt-10 pb-6">
-                <span class="sd-footer">SD THE BEST</span>
-            </div>
         </div>
     </div>
 
@@ -136,26 +127,68 @@
     <div id="years-page" class="page max-w-5xl mx-auto text-center">
         <div class="mb-12">
             <button onclick="showPage('subjects-page')" class="text-sky-400 font-bold hover:gap-4 flex items-center justify-center gap-2 mx-auto transition-all">
-                <i class="fas fa-long-arrow-right"></i> العودة لقائمة المواد
+                <i class="fas fa-arrow-right"></i> العودة لقائمة المواد
             </button>
             <h2 id="sub-title" class="text-4xl md:text-7xl font-black mt-6 text-white"></h2>
         </div>
         <div id="years-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 px-4"></div>
     </div>
 
-    <div id="auth" class="page">
-        <div class="max-w-md mx-auto glass-card p-12 text-center border border-sky-500/20">
-            <h2 class="text-3xl font-black mb-6">تسجيل الطالب</h2>
-            <form onsubmit="handleAuth(event)" class="space-y-4">
-                <input type="text" id="u-name" placeholder="الاسم الكامل" required class="w-full p-4 bg-slate-900 border border-white/10 rounded-xl outline-none focus:border-sky-500">
-                <input type="email" placeholder="البريد الإلكتروني" required class="w-full p-4 bg-slate-900 border border-white/10 rounded-xl outline-none focus:border-sky-500 text-left">
-                <button type="submit" class="w-full bg-sky-500 py-4 rounded-xl font-black hover:bg-sky-400 transition-all">فتح الأرشيف</button>
-            </form>
+    <div id="calc-page" class="page max-w-3xl mx-auto">
+        <div class="flex items-center gap-6 mb-10">
+            <button onclick="showPage('home')" class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center hover:bg-emerald-500 transition-all shadow-lg"><i class="fas fa-arrow-right text-xl"></i></button>
+            <h2 class="text-4xl font-black text-emerald-400">حاسبة المعدل</h2>
+        </div>
+        
+        <div class="glass-card p-8 border border-emerald-500/20">
+            <div class="flex justify-center gap-4 mb-8">
+                <button id="calcBtnC" onclick="selectCalcStream('C')" class="px-8 py-3 rounded-xl font-black border-2 border-sky-500 bg-sky-500 text-white transition-all">شعبة C</button>
+                <button id="calcBtnD" onclick="selectCalcStream('D')" class="px-8 py-3 rounded-xl font-black border-2 border-indigo-500 text-white hover:bg-indigo-500/30 transition-all">شعبة D</button>
+            </div>
+
+            <div id="calc-inputs" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                </div>
+
+            <button onclick="calculateResult()" class="w-full mt-8 bg-emerald-500 py-4 rounded-xl font-black text-xl hover:bg-emerald-400 transition-all text-white shadow-lg shadow-emerald-500/30">احسب النتيجة الآن</button>
+            
+            <div id="calc-result" class="mt-6 text-center text-3xl font-black text-emerald-400 hidden bg-slate-900/80 p-6 rounded-2xl border border-emerald-500/30"></div>
+        </div>
+    </div>
+
+    <div id="contact-page" class="page max-w-xl mx-auto">
+        <div class="flex items-center gap-6 mb-10">
+            <button onclick="showPage('home')" class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-500 transition-all shadow-lg"><i class="fas fa-arrow-right text-xl"></i></button>
+            <h2 class="text-4xl font-black text-pink-400">رسالة لصانع الموقع</h2>
+        </div>
+
+        <div class="glass-card p-10 border border-pink-500/20 relative">
+            <div id="form-container">
+                <form id="contactForm" action="https://formspree.io/f/mnjogqqa" method="POST" class="space-y-6">
+                    <div>
+                        <label class="block mb-2 font-bold text-slate-300">الاسم <span class="text-pink-500">*</span></label>
+                        <input type="text" name="name" placeholder="أدخل اسمك هنا..." required class="w-full p-4 bg-slate-900 border border-white/10 rounded-xl outline-none focus:border-pink-500 text-white transition-all">
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-bold text-slate-300">ملاحظة <span class="text-pink-500">*</span></label>
+                        <textarea name="message" placeholder="اكتب رسالتك، اقتراحك، أو رأيك هنا..." required rows="5" class="w-full p-4 bg-slate-900 border border-white/10 rounded-xl outline-none focus:border-pink-500 text-white resize-none transition-all"></textarea>
+                    </div>
+                    <button id="submitBtn" type="submit" class="w-full bg-pink-500 py-4 rounded-xl font-black text-xl hover:bg-pink-400 transition-all text-white shadow-lg shadow-pink-500/30 flex justify-center items-center gap-2">
+                        <span>إرسال الرسالة</span> <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div id="success-message" class="hidden text-center py-8">
+                <div class="text-6xl mb-4">✅</div>
+                <h3 class="text-3xl font-black text-emerald-400 mb-2">شكراً لك!</h3>
+                <p class="text-slate-300 mb-8">تم إرسال رسالتك بنجاح. نقدر تواصلك معنا.</p>
+                <button onclick="resetContactForm()" class="px-8 py-3 bg-white/10 hover:bg-white/20 rounded-xl font-bold transition-all border border-white/20 w-full shadow-lg">تم والعودة للرئيسية</button>
+            </div>
         </div>
     </div>
 
     <script>
-        // قاعدة بيانات الروابط المشتركة بين الشعبتين
+        /* =================== قاعدة بيانات الأرشيف الكاملة =================== */
         const commonLinks = {
             "التربية الإسلامية": { "2025": "https://www.mediafire.com/file/nf6vk8fkc4tqph7/Bac+IR+2025.pdf/file", "2024": "https://www.mediafire.com/file/2n4q7xnytirha5u/2024+IR.pdf/file", "2023": "https://www.mediafire.com/file/7ijktuktt0ki5u3/2023+IR.pdf/file", "2022": "https://www.mediafire.com/file/zcxk811lrud7uq0/2022+IR.pdf/file", "2021": "https://www.mediafire.com/file/nf2110n1dl80cr3/2021+IR.pdf/file", "2020": "https://www.mediafire.com/file/rwmq2qrklvhkd3j/2020+IR.pdf/file" },
             "اللغة العربية": { "2025": "https://www.mediafire.com/file/r3hocmn6rvocoso/2025+AR.pdf/file", "2024": "https://www.mediafire.com/file/h2f70t7ou4sw53h/2024+AR.pdf/file", "2023": "https://www.mediafire.com/file/afd9kc176b82jky/AR+2023.pdf/file", "2022": "https://www.mediafire.com/file/izidrchgp1h7ma5/AR+2022.pdf/file", "2021": "https://www.mediafire.com/file/cykhwklou156tm8/2021+AR.pdf/file" },
@@ -163,7 +196,6 @@
             "اللغة الإنجليزية": { "2024": "https://www.mediafire.com/file/njnx0r7x61wwto5/Bac+2024+EN.pdf/file", "2023": "https://www.mediafire.com/file/2f301tptwlfy14l/Bac+2023+EN.pdf/file", "2022": "https://www.mediafire.com/file/p79d96i0cu4ax71/Bac+2022+EN.pdf/file", "2021": "https://www.mediafire.com/file/qjwqlci719u9chn/Bac+2021+EN.pdf/file", "2020": "https://www.mediafire.com/file/f0wpuqi6xn5xrov/Bac+2020+EN.pdf/file" }
         };
 
-        // قاعدة بيانات الروابط الخاصة بكل شعبة
         const linksDB = {
             D: {
                 "الرياضيات": { "2025": "https://www.mediafire.com/file/ubb8aogmfabumoi/BacD2025SN.pdf/file", "2024": "https://www.mediafire.com/file/qyvmaqh8e4k3t6i/SujetBacD2024SN.pdf/file", "2023": "https://www.mediafire.com/file/kmhl3e6ql3jugsr/Bac_D_MA_2023_sn_.pdf/file", "2022": "https://www.mediafire.com/file/5ooza00bw3q83l3/Bac_D_2022_M_sn.pdf/file", "2021": "https://www.mediafire.com/file/pof5xywc7aplpru/Bac_D_2021_M_sn.pdf/file", "2020": "https://www.mediafire.com/file/q5qmaslzdzpad1d/Bac_D_2020_M_sn.pdf/file", "2019": "https://www.mediafire.com/file/xjpedfgozqlm2uh/Bac_D_2019_M_sn.pdf/file", "2018": "https://www.mediafire.com/file/ajx1ubhxl97kzi9/Bac_D_2018_M_sn.pdf/file", "2017": "https://www.mediafire.com/file/1zrni6t720tprxb/Bac_D_M_2017_sn_.pdf/file", "2016": "https://www.mediafire.com/file/uzawxjz05aad5si/Bac_D_2016_M_sn.pdf/file", "2015": "https://www.mediafire.com/file/k958qw1nx4bdyze/Bac_D_2015_M_sn.pdf/file", "2014": "https://www.mediafire.com/file/g6dplscadl407eo/Bac_D_2014_M_sn.pdf/file", "2013": "https://www.mediafire.com/file/6zmf0cmbwga6e8n/Bac_D_2013_M_sn.pdf/file", "2012": "https://www.mediafire.com/file/dq47nbkd4gb5w6b/Bac_D_2012_M_sn.pdf/file", "2011": "https://www.mediafire.com/file/sjap1gkdpwalue3/Bac_D_2011_M_sn.pdf/file", "2010": "https://www.mediafire.com/file/eo5cgaa28icf7f1/Bac+D+2010+M+sn.pdf/file" },
@@ -180,23 +212,21 @@
         const subjectsList = ["الرياضيات", "الفيزياء والكيمياء", "العلوم الطبيعية", "اللغة العربية", "التربية الإسلامية", "اللغة الفرنسية", "اللغة الإنجليزية"];
         let currentBranch = '';
 
-        // دالة التنقل بين الصفحات بحركة سلسة
+        /* =================== نظام التنقل =================== */
         function showPage(id) {
             const current = document.querySelector('.page.active');
             const target = document.getElementById(id);
             if(current === target) return;
             
-            // إخفاء الصفحة الحالية
             gsap.to(current, { opacity: 0, y: 20, duration: 0.3, onComplete: () => {
                 current.classList.remove('active');
                 target.classList.add('active');
-                // إظهار الصفحة الجديدة
                 gsap.fromTo(target, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.4 });
             }});
             window.scrollTo(0,0);
         }
 
-        // فتح الشعبة وعرض موادها
+        /* =================== الأرشيف =================== */
         function openBranch(branch) {
             currentBranch = branch;
             document.getElementById('branch-title').innerText = "شعبة " + branch;
@@ -212,55 +242,142 @@
             showPage('subjects-page');
         }
 
-        // فتح المادة وعرض السنوات المتاحة
         function openYears(sub) {
             document.getElementById('sub-title').innerText = sub;
             const grid = document.getElementById('years-grid');
             grid.innerHTML = '';
             
-            // دمج الروابط الخاصة والعامة
             const specific = (linksDB[currentBranch] && linksDB[currentBranch][sub]) || {};
             const shared = commonLinks[sub] || {};
             const allLinks = {...shared, ...specific};
-            
-            // ترتيب السنوات من الأحدث للأقدم
             const years = Object.keys(allLinks).sort((a,b) => b-a);
             
             years.forEach(y => {
+                // أصبح التحميل مباشراً بمجرد الضغط
                 grid.innerHTML += `<div onclick="download('${allLinks[y]}')" class="year-btn cursor-pointer text-center font-bold">${y}</div>`;
             });
             showPage('years-page');
         }
 
-        // التعامل مع التحميل (التحقق من تسجيل الدخول)
         function download(link) {
-            if(!localStorage.getItem('bac_user')) { 
-                showPage('auth'); 
-            } else { 
-                window.open(link, '_blank'); 
+            window.open(link, '_blank'); 
+        }
+
+        /* =================== حاسبة المعدل =================== */
+        let currentCalcStream = 'C';
+        const calcCoefficients = {
+            'D': {
+                'العلوم الطبيعية': 8,
+                'الفيزياء والكيمياء': 7,
+                'الرياضيات': 6,
+                'اللغة الفرنسية': 3,
+                'اللغة العربية': 3,
+                'التربية الإسلامية': 2,
+                'اللغة الإنجليزية': 2,
+                'الرياضة البدنية': 1
+            },
+            'C': {
+                'الرياضيات': 9,
+                'الفيزياء والكيمياء': 8,
+                'العلوم الطبيعية': 4,
+                'اللغة الفرنسية': 3,
+                'اللغة العربية': 3,
+                'التربية الإسلامية': 2,
+                'اللغة الإنجليزية': 2,
+                'الرياضة البدنية': 1
+            }
+        };
+
+        function selectCalcStream(stream) {
+            currentCalcStream = stream;
+            document.getElementById('calcBtnC').className = `px-8 py-3 rounded-xl font-black border-2 border-sky-500 transition-all ${stream === 'C' ? 'bg-sky-500 text-white' : 'text-white hover:bg-sky-500/30'}`;
+            document.getElementById('calcBtnD').className = `px-8 py-3 rounded-xl font-black border-2 border-indigo-500 transition-all ${stream === 'D' ? 'bg-indigo-500 text-white' : 'text-white hover:bg-indigo-500/30'}`;
+            renderInputs();
+            document.getElementById('calc-result').classList.add('hidden');
+        }
+
+        function renderInputs() {
+            const container = document.getElementById('calc-inputs');
+            container.innerHTML = '';
+            const subjects = calcCoefficients[currentCalcStream];
+
+            for (const [subject, coef] of Object.entries(subjects)) {
+                container.innerHTML += `
+                    <div class="flex items-center justify-between bg-slate-900/50 p-4 rounded-xl border border-white/5">
+                        <label class="font-bold text-sm w-3/5">${subject} <span class="text-emerald-400 text-xs ml-1">(×${coef})</span></label>
+                        <input type="number" class="calc-grade w-2/5 p-2 bg-slate-800 border border-white/10 rounded-lg outline-none focus:border-emerald-500 text-center text-white font-bold" data-coef="${coef}" placeholder="0-20" min="0" max="20" step="0.25">
+                    </div>
+                `;
             }
         }
 
-        // تسجيل الطالب وحفظ اسمه
-        function handleAuth(e) {
-            e.preventDefault();
-            const name = document.getElementById('u-name').value;
-            localStorage.setItem('bac_user', name); // حفظ أبدي في المتصفح
-            updateUserUI(name);
+        function calculateResult() {
+            const grades = document.querySelectorAll('.calc-grade');
+            let totalPoints = 0;
+            let totalCoefs = 0;
+
+            grades.forEach(input => {
+                const grade = parseFloat(input.value) || 0;
+                const coef = parseInt(input.getAttribute('data-coef'));
+                totalPoints += (grade * coef);
+                totalCoefs += coef;
+            });
+
+            if (totalCoefs > 0) {
+                const finalGPA = (totalPoints / totalCoefs).toFixed(2);
+                const resultDiv = document.getElementById('calc-result');
+                resultDiv.classList.remove('hidden');
+                
+                let colorClass = finalGPA >= 10 ? 'text-emerald-400' : 'text-rose-400';
+                let message = finalGPA >= 10 ? 'معدل ممتاز، استمر! 🎉' : 'عليك بذل المزيد من الجهد! 💪';
+
+                resultDiv.innerHTML = `<span class="${colorClass} text-5xl">${finalGPA}</span> <span class="text-xl text-slate-400">/ 20</span><br><div class="text-lg mt-2 text-white">${message}</div>`;
+            }
+        }
+
+        /* =================== إرسال النموذج بدون تحويل (AJAX) =================== */
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // منع التحويل للنافذة البيضاء
+            
+            const btn = document.getElementById('submitBtn');
+            btn.innerHTML = 'جاري الإرسال... <i class="fas fa-spinner fa-spin ml-2"></i>';
+            btn.disabled = true;
+
+            const data = new FormData(contactForm);
+            
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById('form-container').classList.add('hidden');
+                    document.getElementById('success-message').classList.remove('hidden');
+                    contactForm.reset();
+                } else {
+                    alert("حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة لاحقاً.");
+                }
+            }).catch(error => {
+                alert("حدث خطأ في الاتصال. يرجى التحقق من الإنترنت والمحاولة لاحقاً.");
+            }).finally(() => {
+                btn.innerHTML = '<span>إرسال الرسالة</span> <i class="fas fa-paper-plane"></i>';
+                btn.disabled = false;
+            });
+        });
+
+        function resetContactForm() {
             showPage('home');
+            setTimeout(() => {
+                document.getElementById('success-message').classList.add('hidden');
+                document.getElementById('form-container').classList.remove('hidden');
+            }, 500); // إخفاء الرسالة بعد الانتقال للرئيسية
         }
 
-        // تحديث واجهة المستخدم عند وجود مستخدم مسجل
-        function updateUserUI(name) {
-            const avatar = document.getElementById('user-avatar');
-            avatar.innerText = name.trim().charAt(0);
-            avatar.style.display = 'flex';
-            document.getElementById('login-btn').style.display = 'none';
-        }
-
-        // دالة العد التنازلي لباك 2026
+        /* =================== العد التنازلي =================== */
         function updateCountdown() {
-            // تاريخ الباك التقريبي (29 يونيو 2026)
             const examDate = new Date("June 29, 2026 08:00:00").getTime();
             const now = new Date().getTime();
             const gap = examDate - now;
@@ -270,29 +387,15 @@
                 return;
             }
 
-            const d = Math.floor(gap / (1000 * 60 * 60 * 24));
-            const h = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
-            const s = Math.floor((gap % (1000 * 60)) / 1000);
-            
-            document.getElementById("days").innerText = d;
-            document.getElementById("hours").innerText = h;
-            document.getElementById("minutes").innerText = m;
-            document.getElementById("seconds").innerText = s;
+            document.getElementById("days").innerText = Math.floor(gap / (1000 * 60 * 60 * 24));
+            document.getElementById("hours").innerText = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById("minutes").innerText = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("seconds").innerText = Math.floor((gap % (1000 * 60)) / 1000);
         }
 
-        // تشغيل العد التنازلي كل ثانية
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // **التعديل الجوهري (الإصلاح للأبد):** التحقق من المستخدم عند تحميل الصفحة
-        window.onload = () => { 
-            const savedUser = localStorage.getItem('bac_user');
-            if (savedUser) {
-                updateUserUI(savedUser);
-            }
-            // تم حذف سطر removeItem القديم لكي يبقى المستخدم مسجلاً للأبد
-        }
     </script>
 </body>
 </html>
